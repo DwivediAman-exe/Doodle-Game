@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/born69confused/Doodle-Game#readme",
   "dependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
     "express": "^4.17.1",
     "socket.io": "^4.1.2"
   }
