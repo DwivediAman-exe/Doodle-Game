@@ -1,8 +1,10 @@
 import { join } from 'path';
 import express from 'express';
+import socketIO from 'socket.io';
 
 const PORT = 4000;
 const app = express();
+app.use(express.static(join(__dirname,'static')))
 
 app.set('view engine', 'pug');
 app.set('views', join(__dirname, 'views'));
@@ -15,4 +17,6 @@ const handleListening = () =>
   console.log(`✅ Server running on http://localhost:${PORT}`);
 
 
-app.listen(PORT, handleListening );
+const server = app.listen(PORT, handleListening );
+
+const io = socketIO(server);
