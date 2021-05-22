@@ -1,0 +1,28 @@
+{
+  "name": "doodle-game",
+  "version": "1.0.0",
+  "description": "Realtime game build with socket.io",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/born69confused/Doodle-Game.git"
+  },
+  "keywords": [
+    "Doodle",
+    "realtime",
+    "game"
+  ],
+  "author": "aman dwivedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/born69confused/Doodle-Game/issues"
+  },
+  "homepage": "https://github.com/born69confused/Doodle-Game#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  }
+}
